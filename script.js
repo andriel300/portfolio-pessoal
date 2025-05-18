@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const form = document.getElementById("contact-form");
   form.addEventListener("submit", function(event) {
     event.preventDefault(); // Evita recarregar a página
-    alert("Mensagem enviada com sucesso! (simulação)");
+    alert("Mensagem enviada com sucesso!");
   });
 });
 
