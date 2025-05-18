@@ -1,10 +1,4 @@
-/* Reset básico */ 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -75,64 +69,6 @@ main {
   max-width: 600px;
   text-align: center;
   animation: fadeIn 1s ease;
-}
-
-.landing {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* min-height: 90vh; */
-  animation: fadePageIn 1s ease;
-}
-
-.card {
-  background-color: #ffffffcc;
-  padding: 2rem;
-  border-radius: 1rem;
-  text-align: center;
-  max-width: 400px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.5s ease;
-}
-
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 1rem;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
-
-.social-buttons {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #0097a7;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn:hover {
-  background-color: #0097a7;
-  transform: translateY(-2px);
-}
-
-.highlight {
-  color: #0097a7;
 }
 
 /* Rodapé suave */
@@ -247,10 +183,6 @@ body.dark button {
 
 body.dark button:hover {
   background-color: #007b8a;
-}
-
-body.dark .card {
-  background-color: #2b2b2bcc;
 }
 
 /* Botão de tema */
