@@ -1,11 +1,17 @@
 // Comentário: Apenas exibe no console quando o formulário é enviado
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
-  form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita recarregar a página
-    alert("Mensagem enviada com sucesso!");
-  });
+  const loading = document.getElementById("loading");
+  const btn = document.getElementById("submit-btn");
+
+  if (form) {
+    form.addEventListener("submit", () => {
+      btn.disabled = true;
+      loading.classList.remove("hidden");
+    });
+  }
 });
+
 
 
 // Alternar tema claro/escuro com persistência no localStorage
@@ -24,13 +30,5 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", isDark ? "dark" : "light");
   });
 
-  // Simula envio do formulário com alerta (contato.html)
-  const form = document.getElementById("contact-form");
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      alert("Mensagem enviada com sucesso! (simulação)");
-    });
-  }
 });
 
