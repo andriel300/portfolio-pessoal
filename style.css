@@ -604,3 +604,47 @@ body.dark .project-card h3 {
 body.dark .project-card p {
   color: #bbb;
 }
+
+
+#loading {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #0097a7;
+  font-size: 1.1rem;
+  animation: pulse 1.5s infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.thankyou-page {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.thankyou-page h1 {
+  font-size: 2rem;
+  color: #004d61;
+  margin-bottom: 1rem;
+}
+
+.thankyou-page p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
