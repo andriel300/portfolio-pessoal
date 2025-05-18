@@ -1,4 +1,4 @@
-/* Reset básico */ 
+/* Reset básico */
 *,
 *::before,
 *::after {
@@ -95,6 +95,7 @@ main {
   text-align: center;
   animation: fadeIn 1s ease;
 }
+
 /* Estilo apenas para a página inicial */
 .main-home {
   max-width: 100%;
@@ -106,8 +107,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 120px); /* Altura total menos header+footer */
+  min-height: calc(100vh - 120px);
+  /* Altura total menos header+footer */
 }
+
 .landing {
   display: flex;
   justify-content: center;
@@ -237,7 +240,8 @@ form {
   margin-top: 20px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -245,7 +249,8 @@ input, textarea {
   transition: all 0.3s ease;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #00bcd4;
   outline: none;
   box-shadow: 0 0 0 3px #00bcd420;
@@ -287,6 +292,7 @@ ul li {
   padding: 8px 0;
   border-bottom: 1px solid #eee;
 }
+
 /* Tema escuro */
 body.dark {
   background-color: #1e1e1e;
@@ -316,13 +322,15 @@ body.dark .menu a:hover {
   color: #aadfff;
 }
 
-body.dark input, body.dark textarea {
+body.dark input,
+body.dark textarea {
   background-color: #333;
   color: white;
   border-color: #555;
 }
 
-body.dark input:focus, body.dark textarea:focus {
+body.dark input:focus,
+body.dark textarea:focus {
   box-shadow: 0 0 0 3px #00bcd420;
 }
 
@@ -366,6 +374,7 @@ body.dark .tech-stack {
 body {
   animation: fadePageIn 0.7s ease-in;
 }
+
 .profile-flex {
   display: flex;
   flex-direction: row;
@@ -414,19 +423,38 @@ body {
 }
 
 @keyframes fadePageIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Animações suaves */
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.98); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes slideDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsivo */
@@ -439,4 +467,81 @@ body {
     flex-direction: column;
     gap: 10px;
   }
+}
+
+.educacao {
+  padding: 2rem;
+  text-align: center;
+}
+
+.evolucao {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #0097a7;
+  font-weight: bold;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  border-left: 3px solid #0097a7;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -0.85rem;
+  top: 0.3rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #0097a7;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.timeline-item h3 {
+  font-size: 1.4rem;
+  color: #004d61;
+  margin: 0.3rem 0;
+}
+
+.timeline-item p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+}
+
+.timeline-item i {
+  color: #0097a7;
+  margin-right: 0.4rem;
+}
+
+body.dark .timeline {
+  border-left: 3px solid #66c2cd;
+}
+
+body.dark .timeline-item::before {
+  background-color: #66c2cd;
+}
+
+body.dark .timeline-item h3 {
+  color: #66c2cd;
+}
+
+body.dark .timeline-item p {
+  color: #ccc;
 }
