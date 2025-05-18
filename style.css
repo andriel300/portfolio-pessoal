@@ -132,6 +132,78 @@ ul li {
   padding: 8px 0;
   border-bottom: 1px solid #eee;
 }
+/* Tema escuro */
+body.dark {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark header {
+  background-color: #2a2a2a99;
+}
+
+body.dark main {
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+}
+
+body.dark footer {
+  background-color: #1c1c1c;
+  color: #888;
+}
+
+body.dark .menu a {
+  color: #e0e0e0;
+}
+
+body.dark .menu a:hover {
+  background-color: #333;
+  color: #aadfff;
+}
+
+body.dark input, body.dark textarea {
+  background-color: #333;
+  color: white;
+  border-color: #555;
+}
+
+body.dark input:focus, body.dark textarea:focus {
+  box-shadow: 0 0 0 3px #00bcd420;
+}
+
+body.dark button {
+  background-color: #0097a7;
+}
+
+body.dark button:hover {
+  background-color: #007b8a;
+}
+
+/* Botão de tema */
+#toggle-theme {
+  margin-left: auto;
+  margin-right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+#toggle-theme:hover {
+  transform: scale(1.1);
+}
+
+/* Animação de entrada da página */
+body {
+  animation: fadePageIn 0.7s ease-in;
+}
+
+@keyframes fadePageIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 /* Animações suaves */
 @keyframes fadeIn {
@@ -155,4 +227,3 @@ ul li {
     gap: 10px;
   }
 }
-
