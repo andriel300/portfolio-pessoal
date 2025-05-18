@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo sólido e suave */
+body {
+  background-color: #f2f6f8;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 1s ease;
+}
+
+/* Header fixo com menu centralizado */
+header {
+  background-color: #ffffffcc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #2a2a2a;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  background-color: #d0ebff;
+  color: #005577;
+}
+
+/* Conteúdo centralizado com suavidade */
+main {
+  margin-top: 80px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+/* Rodapé suave */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Formulário zen */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #00bcd4;
+  outline: none;
+  box-shadow: 0 0 0 3px #00bcd420;
+}
+
+button {
+  padding: 10px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0097a7;
+  transform: scale(1.03);
+}
+
+/* Títulos */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #004d61;
+  animation: slideDown 0.6s ease-out;
+}
+
+/* Listas no portfólio ou formação */
+ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  margin-top: 20px;
+}
+
+ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Animações suaves */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
