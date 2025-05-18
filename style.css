@@ -34,8 +34,8 @@ body {
 }
 
 .tech-stack {
-  font-size: 1.6rem;
-  margin-top: 1rem;
+  font-size: 2rem;
+  margin-top: 1.5rem;
   color: #555;
 }
 
@@ -56,7 +56,7 @@ header {
 }
 
 nav {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -95,7 +95,19 @@ main {
   text-align: center;
   animation: fadeIn 1s ease;
 }
+/* Estilo apenas para a página inicial */
+.main-home {
+  max-width: 100%;
+  text-align: left;
+  padding: 0;
+  background: none;
+  box-shadow: none;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px); /* Altura total menos header+footer */
+}
 .landing {
   display: flex;
   justify-content: center;
@@ -115,14 +127,22 @@ main {
   transition: background-color 0.5s ease;
 }
 
-.profile-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 2rem;
-  gap: 2rem;
-  animation: fadePageIn 1s ease;
+/* .profile-container { */
+/*   display: flex; */
+/*   flex-wrap: wrap; */
+/*   align-items: center; */
+/*   justify-content: center; */
+/*   padding: 2rem 2rem; */
+/*   gap: 2rem; */
+/*   animation: fadePageIn 1s ease; */
+/* } */
+/**/
+
+.home-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .profile-image {
@@ -132,8 +152,8 @@ main {
 }
 
 .profile-pic {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -144,24 +164,32 @@ main {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .profile-info h1 {
   font-size: 2rem;
 }
 
-.subtitle {
+.profile-info p {
   font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.subtitle {
+  font-size: 1.3rem;
   color: #555;
 }
 
-..social-buttons {
+.social-buttons {
   margin-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-}social-buttons {
+}
+
+.social-buttons {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
@@ -175,10 +203,11 @@ main {
   gap: 8px;
   background-color: #0097a7;
   color: white;
-  padding: 10px 16px;
+  padding: 12px 20px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1rem;
   transition: background-color 0.3s, transform 0.2s;
 }
 
@@ -336,6 +365,52 @@ body.dark .tech-stack {
 /* Animação de entrada da página */
 body {
   animation: fadePageIn 0.7s ease-in;
+}
+.profile-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.profile-flex .profile-image {
+  flex: 0 0 200px;
+}
+
+.profile-flex .profile-info {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-flex .profile-info h1 {
+  margin-top: 0;
+}
+
+.profile-flex .profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo: stack em telas pequenas */
+@media (max-width: 768px) {
+  .profile-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-flex .profile-info {
+    align-items: center;
+  }
 }
 
 @keyframes fadePageIn {
