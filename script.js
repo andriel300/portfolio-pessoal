@@ -29,6 +29,5 @@ document.addEventListener("DOMContentLoaded", () => {
     const isDark = document.body.classList.contains("dark");
     localStorage.setItem("theme", isDark ? "dark" : "light");
   });
-
 });
 
