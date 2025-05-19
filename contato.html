@@ -24,7 +24,7 @@
   <main>
     <h1>Contato</h1>
 
-    <form action="https://formsubmit.co/andrielscript@gmail.com" method="POST" id="contact-form">
+    <form action="https://formspree.io/f/mblobrbq" method="POST" id="contact-form">
       <label for="name">Nome:</label>
       <input type="text" id="name" name="name" required>
 
@@ -34,20 +34,15 @@
       <label for="message">Mensagem:</label>
       <textarea id="message" name="message" required></textarea>
 
-      <!-- Proteções e configurações -->
-      <input type="hidden" name="_next" value="obrigado.html">
-      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_redirect" value="obrigado.html">
 
       <button type="submit" id="submit-btn">Enviar</button>
       <div id="loading" class="hidden">Enviando... 🧘</div>
     </form>
 
-  </main>
-
-
-  <footer>
-    <p>&copy; 2025 - Andriel J.</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 - Andriel J.</p>
+    </footer>
 </body>
 
 </html>
