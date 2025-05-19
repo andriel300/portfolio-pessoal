@@ -7,7 +7,7 @@ Este é meu portfólio pessoal desenvolvido com foco em simplicidade, elegância
 ## ✨ Funcionalidades
 
 - 🎨 Interface minimalista com animações suaves e tema claro/escuro
-- 💬 Formulário de contato funcional com envio real via [FormSubmit](https://formsubmit.co)
+- 💬 Formulário de contato funcional com envio real via [FormSpree](https://formspree.io)
 - 📂 Sessão de portfólio com projetos reais hospedados
 - 🧘 Estilo visual "zen", limpo e agradável
 
@@ -34,7 +34,7 @@ Este é meu portfólio pessoal desenvolvido com foco em simplicidade, elegância
 - HTML5 semântico
 - CSS3 puro (sem frameworks)
 - JavaScript vanilla
-- [FormSubmit](https://formsubmit.co) para envio de mensagens via email
+- [FormSpree](https://formspree.io) para envio de mensagens via email
 - Font Awesome para ícones
 
 ---
